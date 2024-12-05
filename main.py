@@ -1,4 +1,4 @@
-# from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix
 from interpritate import inerpritate
 import statistics as st
 from math import sqrt
@@ -10,7 +10,7 @@ def Get_param(data, true):
     M = st.median(data)
     R = max(data) - min(data)
     print(f"mean = {X:.3f}, variance = {D:.3f}, so = {sqrt(D):.3f}, median = {M:.3f}, razmah = {R:.3f}, mode = {st.mode(data):.3f}")
-    #print(confusion_matrix(true,data))
+    print(confusion_matrix(true,data))
 
 data = inerpritate()
 n = len(data[0])
