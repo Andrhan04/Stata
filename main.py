@@ -9,7 +9,7 @@ def Get_param(data, true):
     D = st.variance(data,X)
     M = st.median(data)
     R = max(data) - min(data)
-    print(f"mean = {X:.3f}, variance = {D:.3f}, so = {sqrt(D):.3f}, median = {M:.3f}, razmah = {R:.3f}")
+    print(f"mean = {X:.3f}, variance = {D:.3f}, so = {sqrt(D):.3f}, median = {M:.3f}, razmah = {R:.3f}, mode = {st.mode(data):.3f}")
     #print(confusion_matrix(true,data))
 
 data = inerpritate()
